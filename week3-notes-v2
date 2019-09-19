@@ -1,0 +1,2237 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Simple Math in R"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3-2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4^2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "-0.756802495307928"
+      ],
+      "text/latex": [
+       "-0.756802495307928"
+      ],
+      "text/markdown": [
+       "-0.756802495307928"
+      ],
+      "text/plain": [
+       "[1] -0.7568025"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "sin(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "TRUE"
+      ],
+      "text/latex": [
+       "TRUE"
+      ],
+      "text/markdown": [
+       "TRUE"
+      ],
+      "text/plain": [
+       "[1] TRUE"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "4 >3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "FALSE"
+      ],
+      "text/latex": [
+       "FALSE"
+      ],
+      "text/markdown": [
+       "FALSE"
+      ],
+      "text/plain": [
+       "[1] FALSE"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "!(4 == 4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "TRUE"
+      ],
+      "text/latex": [
+       "TRUE"
+      ],
+      "text/markdown": [
+       "TRUE"
+      ],
+      "text/plain": [
+       "[1] TRUE"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "!(3==4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "TRUE"
+      ],
+      "text/latex": [
+       "TRUE"
+      ],
+      "text/markdown": [
+       "TRUE"
+      ],
+      "text/plain": [
+       "[1] TRUE"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "(4==4) && (3>2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Variable Assignment"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a <- 3 + 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "greetings <- \"hey, buddy!\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"hey, buddy!\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(greetings)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "some_logic <- TRUE"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dat <- c(4, 5, 6, 23, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1]  4  5  6 23  2\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(dat)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v1 <- c(1, 2, 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v2 <- c(5, 4, 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v <- c(v1, v2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 1 2 3 5 4 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ERROR",
+     "evalue": "Error in reP(0, 10): could not find function \"reP\"\n",
+     "output_type": "error",
+     "traceback": [
+      "Error in reP(0, 10): could not find function \"reP\"\nTraceback:\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_vec <- reP(0, 10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_vec <- rep(0, 10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " [1] 0 0 0 0 0 0 0 0 0 0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_vec)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m <- 1:20"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>1</li>\n",
+       "\t<li>2</li>\n",
+       "\t<li>3</li>\n",
+       "\t<li>4</li>\n",
+       "\t<li>5</li>\n",
+       "\t<li>6</li>\n",
+       "\t<li>7</li>\n",
+       "\t<li>8</li>\n",
+       "\t<li>9</li>\n",
+       "\t<li>10</li>\n",
+       "\t<li>11</li>\n",
+       "\t<li>12</li>\n",
+       "\t<li>13</li>\n",
+       "\t<li>14</li>\n",
+       "\t<li>15</li>\n",
+       "\t<li>16</li>\n",
+       "\t<li>17</li>\n",
+       "\t<li>18</li>\n",
+       "\t<li>19</li>\n",
+       "\t<li>20</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 1\n",
+       "\\item 2\n",
+       "\\item 3\n",
+       "\\item 4\n",
+       "\\item 5\n",
+       "\\item 6\n",
+       "\\item 7\n",
+       "\\item 8\n",
+       "\\item 9\n",
+       "\\item 10\n",
+       "\\item 11\n",
+       "\\item 12\n",
+       "\\item 13\n",
+       "\\item 14\n",
+       "\\item 15\n",
+       "\\item 16\n",
+       "\\item 17\n",
+       "\\item 18\n",
+       "\\item 19\n",
+       "\\item 20\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 1\n",
+       "2. 2\n",
+       "3. 3\n",
+       "4. 4\n",
+       "5. 5\n",
+       "6. 6\n",
+       "7. 7\n",
+       "8. 8\n",
+       "9. 9\n",
+       "10. 10\n",
+       "11. 11\n",
+       "12. 12\n",
+       "13. 13\n",
+       "14. 14\n",
+       "15. 15\n",
+       "16. 16\n",
+       "17. 17\n",
+       "18. 18\n",
+       "19. 19\n",
+       "20. 20\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "m"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>0</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\item 0\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 0\n",
+       "2. 0\n",
+       "3. 0\n",
+       "4. 0\n",
+       "5. 0\n",
+       "6. 0\n",
+       "7. 0\n",
+       "8. 0\n",
+       "9. 0\n",
+       "10. 0\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] 0 0 0 0 0 0 0 0 0 0"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "my_vec"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v3 <- seq(-10, 10, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>-10</li>\n",
+       "\t<li>-8</li>\n",
+       "\t<li>-6</li>\n",
+       "\t<li>-4</li>\n",
+       "\t<li>-2</li>\n",
+       "\t<li>0</li>\n",
+       "\t<li>2</li>\n",
+       "\t<li>4</li>\n",
+       "\t<li>6</li>\n",
+       "\t<li>8</li>\n",
+       "\t<li>10</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item -10\n",
+       "\\item -8\n",
+       "\\item -6\n",
+       "\\item -4\n",
+       "\\item -2\n",
+       "\\item 0\n",
+       "\\item 2\n",
+       "\\item 4\n",
+       "\\item 6\n",
+       "\\item 8\n",
+       "\\item 10\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. -10\n",
+       "2. -8\n",
+       "3. -6\n",
+       "4. -4\n",
+       "5. -2\n",
+       "6. 0\n",
+       "7. 2\n",
+       "8. 4\n",
+       "9. 6\n",
+       "10. 8\n",
+       "11. 10\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] -10  -8  -6  -4  -2   0   2   4   6   8  10"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "u <- seq(-2,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] -2 -1  0  1  2\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(u)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "u <- c(-2, -1, 0, 1, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] -2 -1  0  1  2\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(u)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Indexing and Slicing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v <- rnorm(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>-1.06260334137038</li>\n",
+       "\t<li>4.1085887870423</li>\n",
+       "\t<li>0.445467605558809</li>\n",
+       "\t<li>0.764216806976572</li>\n",
+       "\t<li>-0.988418030418795</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item -1.06260334137038\n",
+       "\\item 4.1085887870423\n",
+       "\\item 0.445467605558809\n",
+       "\\item 0.764216806976572\n",
+       "\\item -0.988418030418795\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. -1.06260334137038\n",
+       "2. 4.1085887870423\n",
+       "3. 0.445467605558809\n",
+       "4. 0.764216806976572\n",
+       "5. -0.988418030418795\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] -1.0626033  4.1085888  0.4454676  0.7642168 -0.9884180"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "4.1085887870423"
+      ],
+      "text/latex": [
+       "4.1085887870423"
+      ],
+      "text/markdown": [
+       "4.1085887870423"
+      ],
+      "text/plain": [
+       "[1] 4.108589"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v[2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>-1.06260334137038</li>\n",
+       "\t<li>4.1085887870423</li>\n",
+       "\t<li>0.445467605558809</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item -1.06260334137038\n",
+       "\\item 4.1085887870423\n",
+       "\\item 0.445467605558809\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. -1.06260334137038\n",
+       "2. 4.1085887870423\n",
+       "3. 0.445467605558809\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] -1.0626033  4.1085888  0.4454676"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v[1:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "0.764216806976572"
+      ],
+      "text/latex": [
+       "0.764216806976572"
+      ],
+      "text/markdown": [
+       "0.764216806976572"
+      ],
+      "text/plain": [
+       "[1] 0.7642168"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v[4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>4.1085887870423</li>\n",
+       "\t<li>0.445467605558809</li>\n",
+       "\t<li>0.764216806976572</li>\n",
+       "\t<li>-0.988418030418795</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 4.1085887870423\n",
+       "\\item 0.445467605558809\n",
+       "\\item 0.764216806976572\n",
+       "\\item -0.988418030418795\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 4.1085887870423\n",
+       "2. 0.445467605558809\n",
+       "3. 0.764216806976572\n",
+       "4. -0.988418030418795\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1]  4.1085888  0.4454676  0.7642168 -0.9884180"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v[2:5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>-1.06260334137038</li>\n",
+       "\t<li>0.445467605558809</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item -1.06260334137038\n",
+       "\\item 0.445467605558809\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. -1.06260334137038\n",
+       "2. 0.445467605558809\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] -1.0626033  0.4454676"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v[c(1,3)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] -1.0626033  4.1085888  0.4454676  0.7642168 -0.9884180\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>-1.06260334137038</li>\n",
+       "\t<li>4.1085887870423</li>\n",
+       "\t<li>0.764216806976572</li>\n",
+       "\t<li>-0.988418030418795</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item -1.06260334137038\n",
+       "\\item 4.1085887870423\n",
+       "\\item 0.764216806976572\n",
+       "\\item -0.988418030418795\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. -1.06260334137038\n",
+       "2. 4.1085887870423\n",
+       "3. 0.764216806976572\n",
+       "4. -0.988418030418795\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] -1.0626033  4.1085888  0.7642168 -0.9884180"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v[-3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Assignment with Indexing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "u <- c(5,6,8,22)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "u[1]<- 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1]  0  6  8 22\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(u)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "u3 <- u[1:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 0 6 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(u3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v <- c(10,20,30)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 10 20 30\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v[1] <- 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v[2] <- 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1]  0  0 30\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v1 <- c(10, 20, 30, 40, 50)\n",
+    "\n",
+    "v2 <- v1[c(1, 3, 5)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 10 30 50\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v1 <- seq(10, 50, 10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "idx <- c(TRUE, FALSE, TRUE, FALSE, TRUE)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v2 <- v1[idx]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 10 30 50\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Vectorization of Operations"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v <- c(44, 55, 66)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>24</li>\n",
+       "\t<li>35</li>\n",
+       "\t<li>46</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 24\n",
+       "\\item 35\n",
+       "\\item 46\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 24\n",
+       "2. 35\n",
+       "3. 46\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] 24 35 46"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v-20"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>8.8</li>\n",
+       "\t<li>11</li>\n",
+       "\t<li>13.2</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 8.8\n",
+       "\\item 11\n",
+       "\\item 13.2\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 8.8\n",
+       "2. 11\n",
+       "3. 13.2\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1]  8.8 11.0 13.2"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v/5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>FALSE</li>\n",
+       "\t<li>TRUE</li>\n",
+       "\t<li>TRUE</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item FALSE\n",
+       "\\item TRUE\n",
+       "\\item TRUE\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. FALSE\n",
+       "2. TRUE\n",
+       "3. TRUE\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] FALSE  TRUE  TRUE"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "v>50"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Useful Operations on Vectors"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "v <- rnorm(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " [1] -1.6487060 -0.0372122  0.4344280  0.8578775 -0.9337075 -0.6180050\n",
+      " [7]  1.3370495 -0.3682102  0.8400759  1.6898967\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n <- length(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 10\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "1.55348661251485"
+      ],
+      "text/latex": [
+       "1.55348661251485"
+      ],
+      "text/markdown": [
+       "1.55348661251485"
+      ],
+      "text/plain": [
+       "[1] 1.553487"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "sum(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "1.68989669943614"
+      ],
+      "text/latex": [
+       "1.68989669943614"
+      ],
+      "text/markdown": [
+       "1.68989669943614"
+      ],
+      "text/plain": [
+       "[1] 1.689897"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "max(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "-1.64870603604972"
+      ],
+      "text/latex": [
+       "-1.64870603604972"
+      ],
+      "text/markdown": [
+       "-1.64870603604972"
+      ],
+      "text/plain": [
+       "[1] -1.648706"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "min(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "0.155348661251485"
+      ],
+      "text/latex": [
+       "0.155348661251485"
+      ],
+      "text/markdown": [
+       "0.155348661251485"
+      ],
+      "text/plain": [
+       "[1] 0.1553487"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "mean(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ERROR",
+     "evalue": "Error in std(v): could not find function \"std\"\n",
+     "output_type": "error",
+     "traceback": [
+      "Error in std(v): could not find function \"std\"\nTraceback:\n"
+     ]
+    }
+   ],
+   "source": [
+    "std(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "1.06152219342065"
+      ],
+      "text/latex": [
+       "1.06152219342065"
+      ],
+      "text/markdown": [
+       "1.06152219342065"
+      ],
+      "text/plain": [
+       "[1] 1.061522"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "sd(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "xbar <- mean(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 0.1553487\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(xbar)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s <- sd(v)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 1.061522\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# The Matrix"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x1 <- c(4,5,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x2 <- c(55, 55, 77)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m <- cbind(x1, x2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "     x1 x2\n",
+      "[1,]  4 55\n",
+      "[2,]  5 55\n",
+      "[3,]  6 77\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# m is a 3x2 matrix"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m2 <- rbind(x1, x2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "   [,1] [,2] [,3]\n",
+      "x1    4    5    6\n",
+      "x2   55   55   77\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(m2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a <- matrix(0, nrow = 3, ncol = 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "     [,1] [,2] [,3]\n",
+      "[1,]    0    0    0\n",
+      "[2,]    0    0    0\n",
+      "[3,]    0    0    0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dat <- rnorm(15)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 137,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b <- matrix(dat, ncol = 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "           [,1]       [,2]       [,3]\n",
+      "[1,] -1.9270883 -2.3497523 -0.6513686\n",
+      "[2,]  0.6471177 -0.4471478  0.3495089\n",
+      "[3,] -0.6625355  1.0550210  0.2071954\n",
+      "[4,] -0.2991810 -1.7475574 -1.6720769\n",
+      "[5,]  0.6520007 -0.7557938  0.5048199\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Indexing in Matrices"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dat <- sample(12)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m <- matrix(dat, ncol = 3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 142,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "     [,1] [,2] [,3]\n",
+      "[1,]    2    6    4\n",
+      "[2,]    7    9    5\n",
+      "[3,]   11   12    8\n",
+      "[4,]    3   10    1\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "5"
+      ],
+      "text/latex": [
+       "5"
+      ],
+      "text/markdown": [
+       "5"
+      ],
+      "text/plain": [
+       "[1] 5"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "m[2,3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 144,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>4</li>\n",
+       "\t<li>5</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 4\n",
+       "\\item 5\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 4\n",
+       "2. 5\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] 4 5"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "m[1:2,3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 145,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m[, 3] <- 69"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "     [,1] [,2] [,3]\n",
+      "[1,]    2    6   69\n",
+      "[2,]    7    9   69\n",
+      "[3,]   11   12   69\n",
+      "[4,]    3   10   69\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 147,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "4"
+      ],
+      "text/latex": [
+       "4"
+      ],
+      "text/markdown": [
+       "4"
+      ],
+      "text/plain": [
+       "[1] 4"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "nrow(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 148,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num_rows <- nrow(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 149,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(num_rows)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 150,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>5.75</li>\n",
+       "\t<li>9.25</li>\n",
+       "\t<li>69</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 5.75\n",
+       "\\item 9.25\n",
+       "\\item 69\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 5.75\n",
+       "2. 9.25\n",
+       "3. 69\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1]  5.75  9.25 69.00"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "colMeans(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 151,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>77</li>\n",
+       "\t<li>85</li>\n",
+       "\t<li>92</li>\n",
+       "\t<li>82</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 77\n",
+       "\\item 85\n",
+       "\\item 92\n",
+       "\\item 82\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 77\n",
+       "2. 85\n",
+       "3. 92\n",
+       "4. 82\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] 77 85 92 82"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "rowSums(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 152,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " # The Dataframe"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 153,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "id <- seq(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 154,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "score <- rnorm(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 155,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "names <- c(\"john\", \"paul\", \"george\", \"ringo\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 156,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "vocals <- c(TRUE, TRUE, FALSE, FALSE)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 159,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dset <- data.frame(id, names, score, vocals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 160,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "  id  names       score vocals\n",
+      "1  1   john  0.12041263   TRUE\n",
+      "2  2   paul -1.61834691   TRUE\n",
+      "3  3 george  0.07198323  FALSE\n",
+      "4  4  ringo -0.60648683  FALSE\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(dset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 161,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "john\n",
+       "<details>\n",
+       "\t<summary style=display:list-item;cursor:pointer>\n",
+       "\t\t<strong>Levels</strong>:\n",
+       "\t</summary>\n",
+       "\t<ol class=list-inline>\n",
+       "\t\t<li>'george'</li>\n",
+       "\t\t<li>'john'</li>\n",
+       "\t\t<li>'paul'</li>\n",
+       "\t\t<li>'ringo'</li>\n",
+       "\t</ol>\n",
+       "</details>"
+      ],
+      "text/latex": [
+       "john\n",
+       "\\emph{Levels}: \\begin{enumerate*}\n",
+       "\\item 'george'\n",
+       "\\item 'john'\n",
+       "\\item 'paul'\n",
+       "\\item 'ringo'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "john\n",
+       "**Levels**: 1. 'george'\n",
+       "2. 'john'\n",
+       "3. 'paul'\n",
+       "4. 'ringo'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] john\n",
+       "Levels: george john paul ringo"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "dset[1, 2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 162,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol class=list-inline>\n",
+       "\t<li>john</li>\n",
+       "\t<li>paul</li>\n",
+       "\t<li>george</li>\n",
+       "\t<li>ringo</li>\n",
+       "</ol>\n",
+       "\n",
+       "<details>\n",
+       "\t<summary style=display:list-item;cursor:pointer>\n",
+       "\t\t<strong>Levels</strong>:\n",
+       "\t</summary>\n",
+       "\t<ol class=list-inline>\n",
+       "\t\t<li>'george'</li>\n",
+       "\t\t<li>'john'</li>\n",
+       "\t\t<li>'paul'</li>\n",
+       "\t\t<li>'ringo'</li>\n",
+       "\t</ol>\n",
+       "</details>"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item john\n",
+       "\\item paul\n",
+       "\\item george\n",
+       "\\item ringo\n",
+       "\\end{enumerate*}\n",
+       "\n",
+       "\\emph{Levels}: \\begin{enumerate*}\n",
+       "\\item 'george'\n",
+       "\\item 'john'\n",
+       "\\item 'paul'\n",
+       "\\item 'ringo'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. john\n",
+       "2. paul\n",
+       "3. george\n",
+       "4. ringo\n",
+       "\n",
+       "\n",
+       "\n",
+       "**Levels**: 1. 'george'\n",
+       "2. 'john'\n",
+       "3. 'paul'\n",
+       "4. 'ringo'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] john   paul   george ringo \n",
+       "Levels: george john paul ringo"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "dset$names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "R",
+   "language": "R",
+   "name": "ir"
+  },
+  "language_info": {
+   "codemirror_mode": "r",
+   "file_extension": ".r",
+   "mimetype": "text/x-r-source",
+   "name": "R",
+   "pygments_lexer": "r",
+   "version": "3.6.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
